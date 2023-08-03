@@ -1,0 +1,17 @@
+cd
+	Move to a specific folder
+
+ls
+	list all folders
+
+cd..
+	One step back on folders
+
+cd/
+	Moves to the root
+
+alt+60
+	<
+
+alt+62
+	>

@@ -1,0 +1,24 @@
+To compile and run de Rust programs, I will be
+using Cargo, all I need to remember for now is
+
+CARGO NEW (NAME OF THE FOLDER)
+
+This command creates a new folder for projects
+with all the needed stuff.
+
+CARGO RUN
+
+This command will compile and create de executable
+for my program, it will also execute on terminal
+
+CARGO CHECK
+
+This command will tell me if my code can compile,
+but it won't create the executable cuz it takes
+more time.
+
+CARGO BUILD --RELEASE
+
+This command will compile a program ready for user 
+to use and all that stuff, it's supposed that it
+won't be changed.
