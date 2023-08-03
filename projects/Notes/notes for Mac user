@@ -1,0 +1,8 @@
+cd
+	Move to a specific folder
+
+ls
+	list all folders
+
+cd -
+	One step back on folders
