@@ -22,3 +22,12 @@ CARGO BUILD --RELEASE
 This command will compile a program ready for user 
 to use and all that stuff, it's supposed that it
 won't be changed.
+
+
+
+
+To use external dependencies, you need to add them in
+the Cargo.toml file. Once you run the cargo build command,
+it will download the dependencies you wanted, and it will 
+also download the dependencies of the dependencies you
+wanted, and so on.
