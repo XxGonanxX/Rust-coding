@@ -1,0 +1,1 @@
+C:\Users\patom\Desktop\Programming\Codigos\Rust\Rust-coding\projects\guessing_game_v1\target\debug\guessing_game_v1.exe: C:\Users\patom\Desktop\Programming\Codigos\Rust\Rust-coding\projects\guessing_game_v1\src\main.rs

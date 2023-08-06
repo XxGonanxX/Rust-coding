@@ -1,11 +1,13 @@
 use std::io;
 use rand::Rng;
+use std::cmp::Ordering;
 
 // ::Rng trait defines methods that random number generators implement.
 // It's easier if we just leave it like that for now. We'll talk about
 // it later. 
 
 fn main() {
+
     println!("Hello, welcome to 'Guess the number'!");
 
     let secret_number = rand::thread_rng().gen_range(1..=100);
@@ -52,5 +54,30 @@ fn main() {
     // {} is a placeholder for the value of the variable guess, but youc
     // can also use {} to print multiple values, example: 
     // println!("{}-{}-{}", 1, 2, 3);
+
+    let mut guess = String::new();
+
+    io::stdin()
+
+        .read_line(&mut guess)
+        .expect("Failed to read line");
+
+    let guess: u32 = guess.trim().parse()
+
+        // trim() method eliminates any whitespace at the beginning
+        // and end of the string. parse() method parses a string into
+        // some kind of number. We need to tell Rust the type of the
+        // number we expect, in this case, u32.
+
+        .expect("Please type a number!");
+
+
+    match guess.cmp(&secret_number) {
+
+        Ordering::Less => println!("Too small!"),
+        Ordering::Greater => println!("Too big!"),
+        Ordering::Equal => println!("You win!"),
+
+    }
 
 }
